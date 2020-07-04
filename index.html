@@ -15,21 +15,20 @@
     </header>
 
     <section>
-      <form action="">
+      <form onsubmit="return handleSubmit()">
         <input data-js="todo-input-text" type="text" placeholder="Uma nova tarefa">
         <input data-js="todo-input-button" type="submit" value="Adicionar">
       </form>
     </section>
 
-    <section data-js="todo-list">
-      <ul>
+    <section>
+      <ul data-js="todo-list">
       </ul>
     </section>
   </div>
 
+  <script src="./script.js"></script>
 
-  <script type="module" src="./getDataJs.js"></script>
-  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
