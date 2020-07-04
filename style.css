@@ -1,0 +1,15 @@
+html {
+  --background: #232323;
+  --button: #FE9E0E;
+  --white: #fff;
+  --card-list: #262626;
+  --card-list-btn: #3C3C3C;
+  --checked-false: #707070;
+  --checked-true: #29CB00;
+  --delete: #c53030;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--white);
+}
