@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
   <meta charset="UTF-8">
@@ -14,33 +14,22 @@
       <h1>Todo</h1>
     </header>
 
-    <section id="form">
+    <section>
       <form action="">
-        <input type="text" placeholder="Uma nova tarefa">
-        <input type="submit" value="Adicionar">
+        <input data-js="todo-input-text" type="text" placeholder="Uma nova tarefa">
+        <input data-js="todo-input-button" type="submit" value="Adicionar">
       </form>
     </section>
 
-    <section id="list">
+    <section data-js="todo-list">
       <ul>
-        <li>
-          Todo
-          <a href="#">Excluir</a>
-        </li>
-        <li>
-          Todo
-          <a href="#">Excluir</a>
-        </li>
-        <li>
-          Todo
-          <a href="#">Excluir</a>
-        </li>
       </ul>
     </section>
   </div>
 
 
-  <script src="./script.js"></script>
+  <script type="module" src="./getDataJs.js"></script>
+  <script type="module" src="./script.js"></script>
 </body>
 
 </html>
