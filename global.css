@@ -6,6 +6,7 @@
 }
 
 html {
+  font-size: 16px;
   --background: #232323;
   --button: #FE9E0E;
   --white: #fff;
@@ -16,6 +17,16 @@ html {
   --delete: #c53030;
   --input-text: #464646;
   --division: #323232;
+}
+
+@media (max-width: 415px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 0 2rem; /*30px base 15*/
+  }
 }
 
 body {
@@ -35,7 +46,7 @@ button {
 }
 
 .container {
-  max-width: 1120px;
-  min-width: 354px;
+  max-width: 70rem; /*1120px */
+  min-width: 22.125rem; /*354px*/
   margin: 0 auto;
 }
