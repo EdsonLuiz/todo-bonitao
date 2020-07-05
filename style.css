@@ -1,4 +1,4 @@
-html {
+/*
   --background: #232323;
   --button: #FE9E0E;
   --white: #fff;
@@ -7,9 +7,61 @@ html {
   --checked-false: #707070;
   --checked-true: #29CB00;
   --delete: #c53030;
+  --input-text: #464646;
+  --division: #323232;
+*/
+header img {
+  padding-top: 37px;
 }
 
-body {
-  background-color: var(--background);
-  color: var(--white);
+hr {
+  border: 1px solid var(--division);
+  margin: 18px 0 27px 0;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  flex: 1;
+  height: 48px;
+
+  color: var(--input-text);
+  padding: 12px 17px;
+
+  background: var(--white);
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+
+li {
+  display: flex;
+  background-color: var(--card-list);
+  transition: transform 0.2s;
+}
+li + li {
+  margin-top: 32px;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+
+li span {
+  flex: 1;
+  padding: 18px 12px;
+}
+
+.svg-plus-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 0 5px 5px 0;
+  background-color: #F29202;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

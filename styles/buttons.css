@@ -1,0 +1,61 @@
+
+/*
+  --background: #232323;
+  --button: #FE9E0E;
+  --white: #fff;
+  --card-list: #262626;
+  --card-list-btn: #3C3C3C;
+  --checked-false: #707070;
+  --checked-true: #29CB00;
+  --delete: #c53030;
+  --input-text: #464646;
+  --division: #323232;
+*/
+
+.btn {
+  width: 60px;
+  height: 60px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-list-btn);
+}
+
+.btn-add {
+  flex: 1;
+  max-width: 164px;
+  height: 48px;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  background: var(--button);
+  color: var(--white);
+
+  margin-bottom: 60px;
+
+  display: flex;
+  align-items: center;
+}
+
+.btn-add span {
+  flex: 1;
+  font-size: 16px;
+}
+
+
+.btn-checked {
+  border-radius: 5px 0 0 5px;
+}
+.svg-check {
+  fill: var(--checked-true);
+}
+.svg-uncheck {
+  fill: var(--checked-false);
+}
+
+
+.btn-delete {
+  align-self: center;
+  justify-content: center;
+  border-radius: 0 5px 5px 0;
+}
