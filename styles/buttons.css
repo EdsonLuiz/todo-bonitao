@@ -31,10 +31,14 @@
   background: var(--button);
   color: var(--white);
 
-  margin-bottom: 60px;
 
   display: flex;
   align-items: center;
+
+  transition: transform 0.2s;
+}
+.btn-add:hover {
+  transform: scale(1.04);
 }
 
 .btn-add span {

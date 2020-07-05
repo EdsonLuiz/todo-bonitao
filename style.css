@@ -21,6 +21,8 @@ hr {
 
 form {
   display: flex;
+  margin-bottom: 60px;
+  position: relative;
 }
 
 input[type="text"] {
@@ -55,6 +57,12 @@ li span {
   padding: 18px 12px;
 }
 
+.todo-input-error-message {
+  position: absolute;
+  bottom: -30px;
+  color: var(--delete)
+}
+
 .svg-plus-container {
   width: 48px;
   height: 48px;
@@ -65,3 +73,4 @@ li span {
   align-items: center;
   justify-content: center;
 }
+
