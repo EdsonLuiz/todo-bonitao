@@ -19,6 +19,12 @@ html {
   --division: #323232;
 }
 
+html,
+body,
+.container {
+  height: 100%;
+}
+
 @media (max-width: 415px) {
   html {
     font-size: 15px;
@@ -49,4 +55,6 @@ button {
   max-width: 70rem; /*1120px */
   min-width: 22.125rem; /*354px*/
   margin: 0 auto;
+  padding-left: 2.3125rem; /*37px base 16*/
+  padding-right: 2.3125rem; /*37px base 16*/
 }

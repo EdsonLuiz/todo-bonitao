@@ -25,6 +25,10 @@ form {
   position: relative;
 }
 
+.todos-section {
+  padding-bottom: 2.3125rem; /*37px base 16*/
+}
+
 .todo-input-text {
   flex: 1;
   height: 48px;
@@ -73,6 +77,22 @@ li span {
   align-items: center;
   justify-content: center;
 }
+
+.text-footer {
+  color : var(--division);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: 0.09rem;
+  padding-bottom: 2.3125rem; /*37px base 16*/
+
+}
+
+.text-footer a {
+  color: var(--card-list-btn);
+  text-decoration: none;
+  font-weight: 900;
+}
+
 
 
 @media (max-width: 415px) {
