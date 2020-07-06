@@ -1,8 +1,10 @@
+import localStorageService from '../services/LocalStorageService.js'
+
 class TodosRepository {
 
 
   constructor() {
-    this.todos = [{title: 'Hello', isCompleted: true}]
+    this.todos = localStorageService.get()
   }
 
   list() {

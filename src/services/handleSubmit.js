@@ -4,6 +4,7 @@ import {renderTodoList} from './renderTodoList.js'
 import {clearInput} from './clearInput.js'
 import {validateInput} from './validateInput.js'
 import {renderError, removeError} from './renderError.js'
+import localStorageService from '../services/LocalStorageService.js'
 
 export function handleSubmit() {
 
@@ -12,6 +13,7 @@ export function handleSubmit() {
     removeError()
     validateInput(todoInputText)
     todosRepository.create(todoInputText)
+    localStorageService.save(todosRepository.list())
     clearInput('todo-input-text')
     renderTodoList()
     return false
